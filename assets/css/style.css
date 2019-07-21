@@ -1,5 +1,3 @@
-/*font-family: 'Alfa Slab One', cursive;
-font-family: 'Ek Mukta', sans-serif;*/
 
 /* Backgrounds */
 body {
@@ -16,20 +14,13 @@ body {
 	margin-right: auto;
 }
 
-/*FOR TESTING*/
-/*#numberSection, #totalPoints {
-	background-color: orange;
-}*/
 
 #buttonSection {
-
-	/*background-color: yellow;*/
 	padding: 0px;
 	padding-top: 50px;
 	padding-bottom: 25px;
 }
 
-/* Fonts */
 h1, h2, h3 {
 	font-family: 'Alfa Slab One', cursive;
 }

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	// ******* NUMBER ARRAYS *******
+	//NUMBER ARRAYS 
 
 	// random computer variable array
 	var rand = [];
@@ -17,9 +17,9 @@ $(document).ready(function() {
 		crystals.push(c);
 	}
 
-	// console.log(crystals);
 
-	// ******* GLOBAL VARIABLES *******
+
+	// GLOBAL VARIABLES
 
 	// random variables selected by computer
 	var randNumber; // number to match
@@ -35,9 +35,9 @@ $(document).ready(function() {
 	var wins = 0;
 	var losses = 0;
 
-	// ******* FUNCTIONS *******
+	//FUNCTIONS
 
-	// pick a random number
+	// pick  random number
 	function pickRandomNumber(arr) {
 
 		var x = arr[Math.floor(Math.random() * arr.length)];
@@ -46,7 +46,7 @@ $(document).ready(function() {
 
 		console.log("random number: " + randNumber);
 
-	} // END of pickRandomNumber function
+	} 
 
 	// pick random numbers for crystals
 
@@ -61,7 +61,7 @@ $(document).ready(function() {
     // check which numbers have been picked
 		console.log("crystal numbers: " + crystalNumbers);
 
-	} // END of pickRandomCrystals function
+	} 
 
 	function crystalValues(arr) {
 
@@ -75,7 +75,7 @@ $(document).ready(function() {
 		c2 = arr[1];
 		c3 = arr[2];
 		c4 = arr[3];
-	} // END of crystalValues function
+	} 
 
 	function gameReset(x) {
 
@@ -91,9 +91,9 @@ $(document).ready(function() {
 		$("#totalNumber").html(totalScore);
 
 		alert(x);
-	} // END of gameReset function
+	} 
 
-	// *** GAME SETTINGS AT START ***
+	// GAME SETTINGS AT START 
 
 	pickRandomNumber(rand); // random number to match
 	pickRandomCrystals(crystals); // array of random crystal values
@@ -144,8 +144,8 @@ $(document).ready(function() {
 			$("#totalNumber").html(totalScore);
 			$("#losses").html("Losses: " + losses);
 
-			setTimeout(function() {gameReset("WOMP-WOMP...YOU LOSE!")}, 200);
+			setTimeout(function() {gameReset("UH OH...YOU LOSE!")}, 200);
 		}
 	});
 
-}); // end of script
+});
